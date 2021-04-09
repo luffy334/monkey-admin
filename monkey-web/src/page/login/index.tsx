@@ -3,22 +3,11 @@ import {withRouter} from "react-router-dom";
 import {Button, Col, Form, Input, Row} from "antd";
 
 class Login extends React.Component<any> {
-    // const onLogin = (values: any) => {
-    //     console.log('Success:', values);
-    //     //this.props.history
-    //     //this.props.history.push({pathname:'detail'})}
-    //     //return <Redirect to="/home" />;
-    // }
-
-
     render() {
         const onLogin = (values: any)=> {
             console.log('Success:', values);
             console.log('Success:', this.props.history);
-            this.props.history.push({pathname: 'home'})
-
-            //return <Route path="home2"/>
-
+            // this.props.history.push({pathname: 'home'})
         }
         return (
             <Row>
