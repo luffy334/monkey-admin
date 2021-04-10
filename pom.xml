@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.monkey</groupId>
+    <artifactId>monkey-admin</artifactId>
+    <version>${monkey.version}</version>
+    <packaging>pom</packaging>
+
+    <name>monkey-admin</name>
+    <description>Monkey管理系统</description>
+
+    <modules>
+<!--        <module>monkey-common</module>-->
+<!--        <module>monkey-manage</module>-->
+<!--        <module>monkey-framework</module>-->
+<!--        <module>monkey-business</module>-->
+        <module>monkey-service</module>
+    </modules>
+
+    <properties>
+        <monkey.version>1.0.0-SNAPSHOT</monkey.version>
+        <spring.boot.version>2.4.4</spring.boot.version>
+        <druid.boot.version>1.2.5</druid.boot.version>
+        <mybatis.boot.version>2.1.4</mybatis.boot.version>
+
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.mybatis.spring.boot</groupId>-->
+<!--                <artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--                <version>${mybatis.boot.version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>com.luffy</groupId>-->
+<!--                <artifactId>monkey-common</artifactId>-->
+<!--                <version>${monkey.version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>com.luffy</groupId>-->
+<!--                <artifactId>monkey-framewok</artifactId>-->
+<!--                <version>${monkey.version}</version>-->
+<!--            </dependency>-->
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+</project>
