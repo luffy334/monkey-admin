@@ -1,5 +1,5 @@
 import React from 'react';
-import {Login} from './page'
+import {Login} from './pages'
 import {Routers} from './router'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.less';

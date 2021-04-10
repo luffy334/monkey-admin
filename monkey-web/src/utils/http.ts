@@ -1,4 +1,9 @@
 import axios from "axios"
+import cookie from 'react-cookies'
+
+axios.create({
+    headers: {'Authorization': cookie.load('userToken')}
+})
 
 // 请求超时 15秒
 axios.defaults.timeout = 15000

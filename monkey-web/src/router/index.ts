@@ -1,7 +1,7 @@
 import {
     Login,
     Home
-} from "../page";
+} from "../pages";
 
 export type RouterType = {
     path: string,

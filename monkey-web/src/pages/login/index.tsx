@@ -1,4 +1,5 @@
 import React from "react";
+import {userLogin} from '../../api/user'
 import {withRouter} from "react-router-dom";
 import {Button, Col, Form, Input, Row} from "antd";
 
@@ -8,6 +9,11 @@ class Login extends React.Component<any> {
             console.log('Success:', values);
             console.log('Success:', this.props.history);
             // this.props.history.push({pathname: 'home'})
+            userLogin(values).then(res=>{
+                console.log(res)
+            }).catch(error=>{
+                console.log(error)
+            })
         }
         return (
             <Row>
