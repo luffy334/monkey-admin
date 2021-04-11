@@ -1,5 +1,8 @@
 spring:
   datasource:
+    # 自动执行sql脚本
+    initialization-mode: always
+    schema: classpath:monkey-ddl.sql
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/monkey-admin?useSSL=true&characterEncoding=UTF-8
